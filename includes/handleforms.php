@@ -1,5 +1,6 @@
 <?php 
 require_once './conn.php';
+require_once './send_email.php';
 
 if (isset($_POST['submit'])){
     // print_r($_POST);
@@ -19,6 +20,7 @@ if (isset($_POST['submit'])){
 
     $stmt -> execute();
 
+    sendRecommendationEmail($name,$phone,$skill,$email);
      // Redirect to avoid resubmission on refresh
      //header("Location: " . $_SERVER['PHP_SELF']);
     echo "Data inserted successfully";

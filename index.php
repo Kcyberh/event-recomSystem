@@ -132,16 +132,16 @@ table.body th {
     <nav>
         <ul>
             <li>
-                <a href="">Admin Dashboard</a>
+                <a href="home.php">Home</a>
             </li>
             |
             <li>
-                <a href="">Recommend</a>
+                <a href="index.php">Recommend</a>
             </li>
         </ul>
     </nav>
 
-    <h1 class="title-text">Rcommend a creative Skill</h1>
+    <h1 class="title-text">Recommend a creative Skill</h1>
     
 <form action="./includes/handleforms.php" method="POST"  class="body">
         <label for="name">
