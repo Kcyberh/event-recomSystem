@@ -106,6 +106,7 @@
         <h1>Welcome to Our Skill Recommendation System </h1>
         <p>Your one-stop solution for all your needs.</p>
         <a href="index.php" class="cta-button">Recommend</a>
+        <a href="./admin/view.php" class="cta-button">Login As Admin</a>
     </header>
 
     <!-- Features Section -->
