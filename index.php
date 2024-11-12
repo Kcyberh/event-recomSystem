@@ -1,9 +1,4 @@
 
-
-
-
-
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -148,7 +143,7 @@ table.body th {
 
     <h1 class="title-text">Rcommend a creative Skill</h1>
     
-<form action="" method="POST"  class="body">
+<form action="./includes/handleforms.php" method="POST"  class="body">
         <label for="name">
             Name
             <input type="text" name="name" id="name" required>

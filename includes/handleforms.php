@@ -20,7 +20,7 @@ if (isset($_POST['submit'])){
     $stmt -> execute();
 
      // Redirect to avoid resubmission on refresh
-     header("Location: " . $_SERVER['PHP_SELF']);
+     //header("Location: " . $_SERVER['PHP_SELF']);
     echo "Data inserted successfully";
     exit();
 }
