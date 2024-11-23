@@ -73,7 +73,17 @@ function sendRecommendationEmail($name, $skill, $phone, $recipientEmail)
         // Send email
         $mail->send();
         
-        echo 'Email sent successfully.';
+        echo "
+     <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+     <script>
+         Swal.fire({
+             title: 'Success!',
+             text: 'Email sent successfully.',
+             icon: 'success',
+             confirmButtonText: 'OK'
+         })
+     </script>
+     ";
 
     } catch (Exception $e) {
         echo 'Failed to send email. Error: ' . $mail->ErrorInfo;

@@ -23,6 +23,16 @@ if (isset($_POST['submit'])){
     sendRecommendationEmail($name,$phone,$skill,$email);
      // Redirect to avoid resubmission on refresh
      //header("Location: " . $_SERVER['PHP_SELF']);
-    echo "Data inserted successfully";
+     echo "
+     <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+     <script>
+         Swal.fire({
+             title: 'Success!',
+             text: 'Data inserted successfully.',
+             icon: 'success',
+             confirmButtonText: 'OK'
+         })
+     </script>
+     ";
     exit();
 }
